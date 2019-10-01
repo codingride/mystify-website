@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="referrer" content="always")
+    meta(name="keywords" content="Social, Mystery, App, Web, People, Human, Mystify, Curiosity, Help, Healing, World")
+    meta(name="description" content="Mystify! Make someone's day around the world. You may too anticipate mysterios message from someone you don't even know.")
+    meta(name="copyright" content="&amp;copy; 2007-2018 codingRide.")
+    meta(property="og:url" content="https://mystify.one")
+    meta(property="og:title" content="Mystify")
+    meta(property="og:type" content="blog")
+    meta(property="og:description" content="Mystify! Make someone's day around the world. You may too anticipate mysterios message from someone you don't even know.")
+    meta(property="og:image" content="/images/mystify.png")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="@mystify_one")
+    meta(name="twitter:creator" content="@mystify_one")
+    meta(name="twitter:title" content="Mystify")
+    meta(name="twitter:description" content="Mystify! Make someone's day around the world. You may too anticipate mysterios message from someone you don't even know.")
+    meta(name="twitter:image" content="/images/mystify.png")
+    meta(property="og:image" content="/images/mystify.png")
+    link(rel="icon" href="/images/m.png" type="image/png" sizes="16x16")
+    link(rel="stylesheet" type="text/css" media="screen" href="/css/bulma.min.css")
+    link(rel="stylesheet" type="text/css" media="screen" href="/css/all.min.css")
+    link(rel="stylesheet" type="text/css" media="screen" href="/css/mystify.css")
+    - if(page === 'home' || page === 'contact')
+      script(src='https://www.google.com/recaptcha/api.js?render=6Lfz868UAAAAAImEnE9fqF4g_1IrxT43_DPjXR6i')
+    title #{ website.title } #{ title }
+  body
+    - var styleBack = ''
+    - if(page === 'home')
+      - styleBack = "background: url('../images/mystifyBack.png') no-repeat 50% fixed; background-size: cover;"
+    - else
+      - styleBack = "background: url('../images/mystifyHead.png') no-repeat center top fixed;"
+    div(id="wrapper")&attributes({ 'style': styleBack })
+      nav(class="navbar is-light" style="background-color: transparent")
+        div(class="container")
+          div(class="navbar-brand")
+            a(class="navbar-item" href="/")
+              img(src="/images/mystify.png")&attributes({ 'title': { title }})
+            div(id="burger" class="navbar-burger burger" data-target="navbarMenu" onclick="openMenu()")
+              span
+              span
+              span
+          div(id="navbarMenu" class="navbar-menu")
+            div(class="navbar-start")
+              each value in menu
+                a(class="navbar-item is-link")&attributes({ 'href': value.link }) #{value.title}
+              
+      block content
+      
+      footer(class="footer" style="background-color: transparent;")
+        div(class="content has-text-centered")
+          div(class="level")
+            div(class="level-item" style="color: purple;")
+              | &copy; 2019 &nbsp;
+              a(class="is-link" href="https://manzilak.com" target="_blank" rel="noopener noreferrer") Manzilak
+            div(class="level-item")
+              each value in footer.legal
+                | &nbsp; &nbsp;
+                a(class="is-link")&attributes({ 'href': value.link }) #{ value.title } 
+            
+      
+      script(src="/js/jquery-3.4.1.min.js")
+      script(src="/js/mystify.js")
+      script(async src="https://www.googletagmanager.com/gtag/js?id=UA-145916093-2")
+      script.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date())
+        gtag('config', 'UA-145916093-2')

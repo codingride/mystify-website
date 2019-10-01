@@ -1,0 +1,113 @@
+html {
+  background-color: transparent;
+}
+
+/*
+  Global Fonts Setup
+*/
+@font-face {
+  font-family: MystifyBold;
+  src: url('../fonts/Quicksand-Bold.ttf');
+}
+@font-face {
+  font-family: MystifyRegular;
+  src: url('../fonts/Quicksand-Regular.ttf');
+}
+@font-face {
+  font-family: MystifyLight;
+  src: url('../fonts/Quicksand-Light.ttf');
+}
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: MystifyBold
+}
+body, button, input, select, textarea, div, p {
+  font-family: MystifyRegular;
+}
+span, small {
+  font-family: MystifyLight;
+}
+
+/* Home page */
+.mystify-logo {
+  max-width: 550px;
+}
+.mystify-phone {
+  max-width: 350px;
+}
+@media screen and (min-width: 769px) {
+  .hero.is-medium .hero-body {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  .mystify-logo {
+    margin-top: 8rem;
+  }
+}
+
+/* Forms  */
+.box {
+  background: white;
+  border-radius: 5px;
+  /* box-shadow: 0 0 20px 8px hsla(0,0%,4%,.1), 0 0 0 0 hsla(0,0%,4%,.1); */
+  /* box-shadow: 0 4px 25px 0 rgba(0,0,0,.1); */
+  box-shadow: 0px 23px 42px rgba(0,0,0,0.2);
+  display: block;
+  padding: 1rem;
+  border: 0;
+  margin: 0 10px;
+}
+.mobile-content {
+  margin: 0 10px;
+}
+.newsletter-box {
+  background: linear-gradient(118deg,rgba(100, 1, 139, 0.9),rgba(185, 115, 185, 0.7))!important;
+}
+.contact-box {
+  box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+}
+.input, .textarea {
+  background-color: transparent;
+  border: 0 solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1.5rem;
+  height: 2.35em;
+  color: white;
+  resize: none;
+}
+.contact-input {
+  color: gray;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 0;
+}
+.input::placeholder {
+  color: rgb(189, 186, 186);
+}
+.button.is-link[disabled] {
+  background-color: plum;
+}
+
+.button.is-link {
+  height: 3.5rem;
+  background-color: purple;
+}
+
+.button.is-link:hover {
+  background-color: rgb(150, 20, 150);
+}
+
+a.is-link {
+  color: purple;
+}
+
+a.is-link:hover {
+  color: rgb(150, 20, 150);
+}
+
+.input:focus, .textarea:focus {
+  box-shadow: none;
+}

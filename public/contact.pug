@@ -1,0 +1,20 @@
+extends layout
+block content
+  section(class="hero is-medium")
+    div(class="hero-body")
+      div(class="container")
+        div(class="columns")
+          div(class="column is-three-fifths is-offset-one-fifth")
+            h1(class="title" style="margin-left: 15px;") Contact us
+            div( id="message")
+            form(id="contact_form")
+              div(class="field box contact-box")
+                p(class="control is-expanded")
+                  input(id="contact_name" class="input contact-input" type="text" name="contact_name" placeholder="Your name")
+                p(class="control is-expanded")
+                  input(id="contact_email" class="input contact-input" type="email" name="contact_email" placeholder="Your email address" autocomplete="off")
+                p(class="control is-expanded")
+                  textarea(id="contact_message" class="textarea contact-input" name="contact_content" placeholder="Your message", cols="30", rows="10")
+                p(class="control has-text-centered")
+                  button(id="contact_submit" type="submit" class="button is-link") Send Message
+        

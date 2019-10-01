@@ -1,0 +1,17 @@
+{
+  "name": "mystify-website",
+  "version": "1.0.0",
+  "description": "Mystify Website",
+  "private": true,
+  "main": "index.js",
+  "homepage": "https://mystify.one",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "Abdullah Alghamdi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}

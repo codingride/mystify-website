@@ -1,0 +1,30 @@
+extends layout
+block content
+  section(class="hero is-small")
+    div(class="hero-body")
+      div(class="container")
+        div(class="columns")
+          div(class="column is-7 is-offset-1")
+            figure(class="image mystify-logo")
+              img(src="./images/mystify.png")
+            h1(class="title has-text-grey-dark" style="margin-left: 15px;") Help healing the world
+          div(class="column")
+            figure(class="image mystify-phone")
+              img(src="./images/phone.png")
+  div(class="content container has-text-centered")
+    p(class="title") Hey!
+    p(class="subtitle mobile-content") Be the first to know about what the heck Mistify is and when the 
+      strike lunch
+      |  launch date will be.
+  div(class="columns")
+    div(class="column is-4 is-offset-4")
+      div( id="message")
+  div(class="columns")
+    div(class="column is-4 is-offset-4")
+      form(id="newsletter_form")
+        div(class="field is-grouped box newsletter-box")
+          p(class="control is-expanded")
+            input(id="newsletter_id" class="input" type="text" name="email" placeholder="Your email address" autocomplete="off")
+          p(class="control")
+            button(id="newsletter_submit" type="submit" class="button is-link") Subscribe
+        
