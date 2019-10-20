@@ -1,2 +1,2 @@
 # mystify-website
-Mystify Project Website
+Mystify One Project Website
