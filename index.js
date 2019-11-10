@@ -52,7 +52,7 @@ app.get('/privacy', (_, res) => {
 const error = require('./content/error.js');
 
 app.all('*', (_, res) => {
-  // Merge global with home
+  // Send an error for other unknown requests
   const errorData = Object.assign(layout, error);
   res.status(404).render('error', errorData);
 });
