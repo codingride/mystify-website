@@ -2,5 +2,5 @@
 
 module.exports = {
   page: 'contact',
-  title: '| Contact'
+  title: '| Contact Us'
 }
