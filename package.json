@@ -6,12 +6,16 @@
   "main": "index.js",
   "homepage": "https://mystify.one",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Abdullah Alghamdi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "pug": "^2.0.4"
-  }
+    "pug": "^2.0.4",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
