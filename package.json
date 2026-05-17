@@ -1,17 +1,20 @@
 {
-  "name": "mystify-website",
-  "version": "1.0.2",
-  "description": "Mystify Website",
-  "private": true,
-  "main": "index.js",
-  "homepage": "https://mystify.one",
-  "scripts": {
-    "start": "nodemon"
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
   },
-  "author": "Abdullah Alghamdi",
-  "license": "ISC",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
-    "express": "^5.2.1",
-    "pug": "^3.0.4"
+    "astro": "^6.3.3"
+  },
+  "devDependencies": {
+    "bulma": "^1.0.4"
   }
 }

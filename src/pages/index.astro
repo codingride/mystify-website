@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Mystify from '../assets/images/mystify.png';
+---
+
+<Layout title="Mystify">
+	<div class="hero-body">
+		<div class="container has-text-centered">
+			<div class="column is-6 is-offset-3">
+				<figure class="image">
+					<Image src={ Mystify } alt="Mystify" loading="eager" />
+				</figure>
+				<h1 class="title">Share your story with the world</h1>
+				<h2 class="subtitle">We are coming back on day...</h2>
+			</div>
+		</div>
+	</div>
+</Layout>
