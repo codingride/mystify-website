@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $navbarBurgers.forEach( el => {
     
     el.addEventListener('click', () => {
+      
       // Get the target from the "data-target" attribute
       const target = el.dataset.target;
       const $target = document.getElementById(target);
